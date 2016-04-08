@@ -57,7 +57,7 @@ class Main extends PluginBase implements Listener
                             }
                             return true;
                         } else {
-                            $sender->sendMessage($this->pref . TextFormat::YELLOW . "Dieser Spieler ist offline.");
+                            $sender->sendMessage($this->pref . TextFormat::YELLOW . "Dieser Spieler($args[0]) ist offline.");
                             return true;
                         }
                     } else {
