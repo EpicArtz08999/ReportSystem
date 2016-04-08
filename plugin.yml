@@ -1,0 +1,10 @@
+name: ReportSystem
+author: BukkitPlaysMC
+description: A Plugin For Easily Managing Factions
+version: 1.0.0
+main: ReportSystem\Main
+api: [1.4.0]
+commands:
+  report:
+    usage: /report <name> <grund>
+    description: Report-Command
