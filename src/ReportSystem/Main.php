@@ -12,6 +12,7 @@ use pocketmine\utils\TextFormat;
 class Main extends PluginBase implements Listener
 {
     public $pref = TextFormat::GRAY . ">> " . TextFormat::RED . "Report" . TextFormat::GRAY . " | ";
+    public $headline = TextFormat::GRAY . "[+]- - - - " . TextFormat::RED . "Report" . TextFormat::GRAY . " - - - -[+]";
     public $times = array();
 
     public function onEnable()
@@ -50,7 +51,7 @@ class Main extends PluginBase implements Listener
                             $reason = implode(" ", $args);
                             foreach ($this->getServer()->getOnlinePlayers() as $pl) {
                                 if ($pl->hasPermission("ReportSystem.check")) {
-                                    $pl->sendMessage(TextFormat::GRAY . "[+]- - - - " . TextFormat::RED . "Report" . TextFormat::GRAY . " - - - -[+]");
+                                    $pl->sendMessage($this->headline);
                                     $pl->sendMessage(TextFormat::AQUA . $player->getName() . TextFormat::YELLOW . " wurde von " . TextFormat::AQUA . $sender->getName() . TextFormat::YELLOW . " reportet.");
                                     $pl->sendMessage(TextFormat::YELLOW . "Grund: " . TextFormat::AQUA . $reason);
                                 }
