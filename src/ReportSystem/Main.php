@@ -23,6 +23,8 @@ class Main extends PluginBase implements Listener
         $this->reloadConfig();
     }
 
+    //Test
+
     public function onJoin(PlayerJoinEvent $event)
     {
         $player = $event->getPlayer();
