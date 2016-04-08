@@ -1,6 +1,6 @@
 name: ReportSystem
 author: BukkitPlaysMC
-description: A Plugin For Easily Managing Factions
+description: Report players easily
 version: 1.0.0
 main: ReportSystem\Main
 api: [1.4.0]
